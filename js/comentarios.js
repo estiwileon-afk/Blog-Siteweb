@@ -28,7 +28,7 @@ function habilitarFuncion() {
 supabase.auth.onAuthStateChange((event, session) => {
   const sectionComment = document.getElementById("comentarios-seccion");
   if (session?.user) {
-    sectionComment.innerHTML = `<div class="border border-gray-300/30 rounded-2xl bg-gradient-to-r from-fuchsia-600/20 to-pink-500/20 p-7 w-full gap-4 flex flex-col hover:brightness-115">
+    sectionComment.innerHTML = `<div class="border border-gray-300/30 rounded-2xl bg-gradient-to-r from-fuchsia-600/20 to-pink-500/20 p-7 max-sm:p-4 w-full gap-4 flex flex-col hover:brightness-115">
                     <h4 class="text-xl font-semibold flex gap-2">
                         <svg
                             class="text-orange-600"

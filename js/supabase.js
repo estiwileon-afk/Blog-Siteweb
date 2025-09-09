@@ -41,7 +41,7 @@ async function mostrarUsuario(usuario) {
     contenedorPerfil.classList.replace("hidden", "flex");
   }
 }
-console.log(document.title)
+
 
 supabase.auth.onAuthStateChange((event, session) => {
   mostrarUsuario(session?.user.user_metadata);
