@@ -1,0 +1,112 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+
+
+@theme {
+  --font-rubik: "rubik", sans-serif;
+}
+
+
+@layer components {
+  .btn-grad {
+    @apply text-white shadow-sm flex gap-2 items-center justify-center
+           bg-gradient-to-r from-purple-600 to-pink-600 px-5 py-2 rounded-2xl
+           border-none
+           hover:from-purple-700 hover:to-pink-700 hover:scale-105
+           active:scale-110;
+  }
+  .btn-glass {
+    @apply flex items-center justify-center gap-2
+           px-5 py-2 rounded-2xl
+           border border-gray-300/30
+           backdrop-blur-2xl
+           bg-white/10
+           text-white
+           transition-all duration-300 ease-in-out;
+  }
+  .btn {
+    @apply flex items-center justify-center gap-2
+           px-5 py-2 rounded-2xl
+           border 
+           backdrop-blur-2xl
+           bg-white/5
+           text-white
+           transition-[scale]  duration-200;
+  }
+
+  .btn-glass:hover {
+    @apply border-white/50 bg-white/15 text-black scale-105;
+  }
+
+  .btn-glass:active {
+    @apply bg-white/15 scale-110;
+  }
+  .color{
+    @apply bg-orange-600
+  }
+}
+
+.sombra-low {
+  box-shadow: 0 0 20px rgb(202, 49, 177);
+}
+.sombra-higth, .elementos:hover {
+  box-shadow: 0 0 15px -5px rgb(165, 91, 255);
+}
+.saltar {
+  animation: saltar 7s infinite;
+}
+body {
+  background: radial-gradient(
+      circle at 20% 80%,
+      rgba(120, 119, 198, 0.3) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 119, 198, 0.3) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 40%,
+      rgba(120, 219, 255, 0.2) 0%,
+      transparent 50%
+    ),
+    linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+}
+
+@keyframes saltar {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+}
+
+.clip-hide {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: clip-path 0.3s ease-in-out, opacity 0.5s;
+  opacity: 0;
+}
+.clip {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  transition: clip-path 0.3s ease-in-out, opacity 0.5s;
+  opacity: 1;
+
+}
+.contenedor-cerrar{
+  opacity: 0;
+  transform: translateY(-20px);
+ transition: all .4s ease-in-out;
+}
+.contenedor-cerrar.contenedor-abierto{
+  opacity: 1;
+  transform: translateY(0);
+ 
+  
+}
+.no-scrollbar {
+  scrollbar-width: none;          /* Firefox */
+}
