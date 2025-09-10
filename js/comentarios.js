@@ -85,7 +85,7 @@ supabase.auth.onAuthStateChange((event, session) => {
                         </svg>
                     </div>
                     <h3 class="text-2xl font-semibold text-center">Unete a la Conversación</h3>
-                    <p class="text-slate-300/70 text-center">Inicia sesión para compartir tus reflexiones y participar en las discusiones académicas.</p>
+                    <p class="text-slate-300/70 text-center">Inicia sesión para que puedas comentar y compartir tus ideas con los demás.</p>
                     <button id="iniciar-2" class="flex gap-2 items-center justify-center  bg-gradient-to-r from-purple-600 to-pink-600 px-5 py-2 rounded-full hover:from-purple-700 hover:to-pink-700 hover:scale-105 transition-all duration-300 group active:scale-110 active:shadow-lg active:shadow-pink-600 sombra-low font-semibold">Iniciar Sesión</button>
                 </div>`;
     sesionIniciar();

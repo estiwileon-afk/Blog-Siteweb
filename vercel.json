@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/pages/:path*", "destination": "/pages/:path*" },
+    { "source": "/ensayos/:path*", "destination": "/ensayos/:path*" },
+    { "source": "/assets/:path*", "destination": "/assets/:path*" }
+  ]
+}
