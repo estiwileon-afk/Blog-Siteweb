@@ -91,7 +91,7 @@ export const ensayos = [
                             </div>
                             <p class="text-xs text-slate-300/70">5 colaboradores</p>
                         </div>
-                        <a class="flex justify-self-center gap-2 items-center  text-white  bg-gradient-to-r from-purple-600 to-pink-500 px-5 py-2 rounded-2xl hover:from-purple-700 hover:to-pink-600 hover:translate-y-[-4px] hover:scale-[103%] transition-all duration-300 group active:scale-110 active:shadow-lg sombra-low justify-center" href="/ensayos/ensayo-1.html">Leer Ensayo Completo</a>
+                        <a class="flex justify-self-center gap-2 items-center  text-white  bg-gradient-to-r from-purple-600 to-pink-500 px-5 py-2 rounded-2xl hover:from-purple-700 hover:to-pink-600 hover:translate-y-[-4px] hover:scale-[103%] transition-all duration-300 group active:scale-110 active:shadow-lg sombra-low justify-center" href="/ensayos/1.html">Leer Ensayo Completo</a>
                     </div>
                 </div>`,
   },
@@ -139,7 +139,7 @@ export const ensayos = [
                             </div>
                             <p class="text-xs text-slate-300/70">5 colaboradores</p>
                         </div>
-                        <a class="flex justify-self-center gap-2 items-center  text-white  bg-gradient-to-r from-purple-600 to-pink-500 px-5 py-2 rounded-2xl hover:from-purple-700 hover:to-pink-600 hover:translate-y-[-4px] hover:scale-[103%] transition-all duration-300 group active:scale-110 active:shadow-lg sombra-low justify-center" href="/ensayos/ensayo-1.html">Leer Ensayo Completo</a>
+                        <a class="flex justify-self-center gap-2 items-center  text-white  bg-gradient-to-r from-purple-600 to-pink-500 px-5 py-2 rounded-2xl hover:from-purple-700 hover:to-pink-600 hover:translate-y-[-4px] hover:scale-[103%] transition-all duration-300 group active:scale-110 active:shadow-lg sombra-low justify-center" href="/ensayos/1.html">Leer Ensayo Completo</a>
                     </div>
                 </div>`,
   },

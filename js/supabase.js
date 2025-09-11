@@ -12,9 +12,11 @@ iniciarButton.addEventListener("click", async (e) => {
     provider: "google",
     options: {
       redirectTo: window.location.href,
+      queryParams: {
+        prompt: "select_account",
+      },
     },
   });
-  
 });
 
 async function mostrarUsuario(usuario) {
@@ -23,7 +25,6 @@ async function mostrarUsuario(usuario) {
     const iniciar = document.getElementById("iniciar");
 
     iniciar.classList.replace("hidden", "flex");
-   
   } else {
     const contenedorPerfil = document.getElementById("contenedor-perfil");
     const nombre = document.getElementById("nombre-perfil");
@@ -42,18 +43,15 @@ async function mostrarUsuario(usuario) {
   }
 }
 
-
 supabase.auth.onAuthStateChange((event, session) => {
   mostrarUsuario(session?.user.user_metadata);
-  if(event === "SIGNED_IN"){
-    const url = new URL(window.location)
+  if (event === "SIGNED_IN") {
+    const url = new URL(window.location);
     url.hash = "";
-    url.search = ""
+    url.search = "";
 
-    window.history.replaceState({}, document.title, url.pathname)
-
+    window.history.replaceState({}, document.title, url.pathname);
   }
-  
 });
 
 const cerrar = document.getElementById("cerrar");
@@ -84,7 +82,5 @@ contenedorPerfil.addEventListener("click", (e) => {
 document.addEventListener("click", (e) => {
   if (!contenedorCerrar.contains(e.target)) {
     contenedorCerrar.classList.replace("flex", "hidden");
-    
   }
 });
-

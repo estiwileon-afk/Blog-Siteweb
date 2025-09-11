@@ -100,6 +100,9 @@ function sesionIniciar() {
       provider: "google",
       options: {
         redirectTo: window.location.href,
+        queryParams: {
+          prompt: "select_account",
+        },
       },
     });
   });
@@ -121,11 +124,11 @@ async function cargarComentarios() {
     .select("*")
     .order("created_at", { ascending: true });
   if (error) {
-    comentarios.innerText = "Error cargando comentarios";
+    alert("Ocurrió un error al cargar los comentarios");
     return;
   }
-  data.c
-  data.forEach((comentarioCargado)=>{
+
+  data.forEach((comentarioCargado) => {
     const comentarioContenedor = document.createElement("div");
     comentarioContenedor.innerHTML = `
     <div class="flex gap-2 border-b h-10 items-center pb-2 border-gray-300/30 ">
@@ -135,13 +138,11 @@ async function cargarComentarios() {
     <div>
       <p class="text-slate-200">${comentarioCargado.content}</p>
     </div>`;
-  comentarioContenedor.className =
-    "text-white border border-gray-300/30 rounded-2xl bg-gradient-to-tr from-cyan-500/30 to-fuchsia-600/30 p-8 max-sm:p-4 w-full gap-6 flex flex-col";
+    comentarioContenedor.className =
+      "text-white border border-gray-300/30 rounded-2xl bg-gradient-to-tr from-cyan-500/30 to-fuchsia-600/30 p-8 max-sm:p-4 w-full gap-6 flex flex-col";
 
-  comentarios.insertAdjacentElement("beforeend", comentarioContenedor);
-  
-  })
-
+    comentarios.insertAdjacentElement("beforeend", comentarioContenedor);
+  });
 }
 async function mostrarComentario() {
   const comentario = document.getElementById("comment");
@@ -176,4 +177,4 @@ async function mostrarComentario() {
   comentarios.insertAdjacentElement("beforeend", comentarioContenedor);
   comentario.value = "";
 }
-cargarComentarios()
+cargarComentarios();
