@@ -124,7 +124,7 @@ async function cargarComentarios() {
     comentarios.innerText = "Error cargando comentarios";
     return;
   }
-  
+  data.c
   data.forEach((comentarioCargado)=>{
     const comentarioContenedor = document.createElement("div");
     comentarioContenedor.innerHTML = `
@@ -163,7 +163,7 @@ async function mostrarComentario() {
 
   const comentarioContenedor = document.createElement("div");
   comentarioContenedor.innerHTML = `
-    <div class="flex gap-2 border-b h-10 items-end pb-2 border-gray-300/30 ">
+    <div class="flex gap-2 border-b h-10 items-center pb-2 border-gray-300/30 ">
       <img class="rounded-full" src="${foto}" height="30px" width="30px" alt="">
       <p class="font-semibold text-xl max-sm:text-sm">${nombre}</p>
     </div>
