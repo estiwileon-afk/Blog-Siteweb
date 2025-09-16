@@ -9,6 +9,7 @@ export default defineConfig({
         ensayos: resolve(__dirname, 'pages/Ensayos.html'),
         equipo: resolve(__dirname, 'pages/Nuestro Equipo.html'),
         ensayo1: resolve(__dirname, 'ensayos/1.html'),
+        ensayo1: resolve(__dirname, 'ensayos/2.html'),
       }
     }
   },
