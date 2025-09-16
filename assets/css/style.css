@@ -108,5 +108,5 @@ body {
   
 }
 .no-scrollbar {
-  scrollbar-width: none;          /* Firefox */
+  scrollbar-width: none;         
 }

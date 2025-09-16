@@ -78,7 +78,6 @@
             <div id="contenedor" class="max-sm:max-w-full  ml-auto h-full max-sm:border-0 border-l pl-5 border-gray-300/30  flex items-center relative min-w-[5rem]">
                 <div id="contenedor-perfil" class="hidden justify-center items-center border border-gray-200/20 bg-white/10 rounded-3xl px-3 py-1.5 gap-3 hover:scale-105 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-orange-500/40 hover:border-orange-500/50 hover:bg-orange-400/20 hover:text-orange-300 cursor-default ml-auto">
                     <img
-                    
                         id="imagen-perfil"
                         class=" rounded-full max-sm:w-[20px] max-sm:h-[20px]"
                         height="24px"
@@ -95,7 +94,7 @@
                 </div>
                 <button id="iniciar" class=" hidden justify-center items-center border border-gray-200/20 bg-white/10 rounded-3xl px-3 py-1.5 gap-3 hover:scale-105 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-orange-500/40 hover:border-orange-500/50 hover:bg-orange-400/20 hover:text-orange-300 cursor-default max-sm:text-sm ml-auto active:border-orange-500/50 active:bg-orange-400/20 active:text-orange-300">
                     <svg
-                    class="min-h-[20px] min-w-[20px]"
+                        class="min-h-[20px] min-w-[20px]"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
@@ -107,7 +106,6 @@
                         <path d="M12 2a9.96 9.96 0 0 1 6.29 2.226a1 1 0 0 1 .04 1.52l-1.51 1.362a1 1 0 0 1 -1.265 .06a6 6 0 1 0 2.103 6.836l.001 -.004h-3.66a1 1 0 0 1 -.992 -.883l-.007 -.117v-2a1 1 0 0 1 1 -1h6.945a1 1 0 0 1 .994 .89c.04 .367 .061 .737 .061 1.11c0 5.523 -4.477 10 -10 10s-10 -4.477 -10 -10s4.477 -10 10 -10z"/>
                     </svg>
                     <span class="max-sm:hidden flex">Iniciar con Google</span>
-                    
                 </button>
             </div>
             <div onclick="toggleMenu()" class="bg-white/10 rounded-3xl px-3 py-1.5 border border-gray-200/20 hidden max-sm:block active:bg-white/20 active:scale-110 transition-all duration-300 active:border-gray-200/30">
@@ -381,33 +379,185 @@
                     </div>
                 </div>
             </section>
-            <section class="flex flex-col w-full items-center justify-center gap-12">
+            <section class="flex flex-col items-center justify-center gap-12 h-max w-full">
                 <div class="flex flex-col gap-2 items-center">
                     <h2 style="font-size: clamp(2rem, 4vw + 1rem, 4rem)" class="font-semibold bg-gradient-to-r from-pink-600 via-purple-600 to-cyan-600 text-transparent bg-clip-text">Ensayos Recientes</h2>
                     <p style="font-size: clamp(.8rem, 1vw + .8rem, 1.6rem)" class="text-slate-400 max-md:w-[80%] text-center">Descubre las últimas reflexiones y análisis de nuestro equipo</p>
                 </div>
-                <div class="grid grid-cols-1 w-[95%] h-[20rem] justify-items-center">
-                    <div class="bg-violet-900/50 p-5 rounded-xl shadow-md w-[80%] flex max-sm:flex-col items-center justify-center gap-5 ">
-                        <p style="font-size: clamp(1rem, 2vw + .8rem, 2rem)" class="text-slate-200 font-semibold text-center">Por el momento no contamos con ningun ensayo, esté atento en los proximos dias.</p>
-                        <svg
-                            class="w-1/2 h-1/2 text-fuchsia-600 max-sm:w-[40%] max-sm:h-[40%]"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2.25"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-heart-crack-icon lucide-heart-crack"
-                        >
-                            <path d="M12.409 5.824c-.702.792-1.15 1.496-1.415 2.166l2.153 2.156a.5.5 0 0 1 0 .707l-2.293 2.293a.5.5 0 0 0 0 .707L12 15"/>
-                            <path d="M13.508 20.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5a5.5 5.5 0 0 1 9.591-3.677.6.6 0 0 0 .818.001A5.5 5.5 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5z"/>
-                        </svg>
+                <div class="grid grid-cols-2 w-[70%] max-sm:w-[90%] min-h-[20rem] justify-items-center gap-6 max-sm:grid-cols-1 ">
+                    <div class="rounded-xl bg-violet-950/40 flex flex-col items-center p-8 gap-6 shadow-sm shadow-gray-900/70 hover:scale-105 hover:brightness-115 transition-all duration-300 ease-in-out justify-between text-white w-full ">
+                        <div class="flex w-full justify-between items-center ">
+                            <p class="text-xs bg-orange-600/30 text-orange-400 border border-orange-600 rounded-2xl px-2 py-0.5 flex items-center">Tendencias E-Commerce</p>
+                            <p class="fechas text-sm text-slate-400 flex gap-1.5 items-start h-max ">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-calendar-icon lucide-calendar"
+                                >
+                                    <path d="M8 2v4"/>
+                                    <path d="M16 2v4"/>
+                                    <rect
+                                        width="18"
+                                        height="18"
+                                        x="3"
+                                        y="4"
+                                        rx="2"
+                                    />
+                                    <path d="M3 10h18"/>
+                                </svg>
+                                17/09/25
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-xl font-semibold line-clamp-2">Las Tendencias Ecommerce en 2025: ¿Qué Podemos Esperar del Comercio Electrónico en el Futuro?</h2>
+                            <p class="text-slate-300/70 line-clamp-4">El ecommerce del futuro en 2025 estará marcado por la inteligencia artificial, personalización, experiencias inmersivas, compras por voz y móvil, y un enfoque en la sostenibilidad y la confianza del cliente.</p>
+                        </div>
+                        <div class="w-full flex flex-col gap-3">
+                            <div class="flex w-full gap-4 items-center justify-between">
+                                <div class="flex">
+                                    <div class=" w-6 h-6 font-semibold border-black text-xs flex justify-center items-center border-2 rounded-full bg-gradient-to-br from-purple-500 to-cyan-500">JA</div>
+                                    <div class="ml-[-8px] w-6 h-6 font-semibold border-black text-xs flex justify-center items-center border-2 rounded-full bg-gradient-to-br from-purple-500 to-cyan-500">EL</div>
+                                    <div class="ml-[-8px] w-6 h-6 font-semibold border-black text-xs flex justify-center items-center border-2 rounded-full bg-gradient-to-br from-purple-500 to-cyan-500">JM</div>
+                                    <div class="ml-[-8px] w-6 h-6 font-semibold border-black text-xs flex justify-center items-center border-2 rounded-full bg-gradient-to-br from-orange-500 to-pink-500">+2</div>
+                                </div>
+                                <p class="text-sm text-slate-300/70 mr-auto max-sm:hidden">5 colaboradores</p>
+                                <div class="flex gap-2 rounded-xl hover:bg-orange-600 transition-all duration-300 ease-in-out px-2 py-1 items-center cursor-pointer">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-book"
+                                    >
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"/>
+                                        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"/>
+                                        <path d="M3 6l0 13"/>
+                                        <path d="M12 6l0 13"/>
+                                        <path d="M21 6l0 13"/>
+                                    </svg>
+                                    <p>Leer Más</p>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
+                                    >
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M5 12l14 0"/>
+                                        <path d="M13 18l6 -6"/>
+                                        <path d="M13 6l6 6"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-xl bg-violet-950/40 flex flex-col items-center p-8 gap-6 shadow-sm shadow-gray-900/70 hover:scale-105 hover:brightness-115 transition-all duration-300 ease-in-out justify-between text-white w-full">
+                        <div class="flex w-full justify-between items-center ">
+                            <p class="text-xs bg-orange-600/30 text-orange-400 border border-orange-600 rounded-2xl px-2 py-0.5 flex items-center">E-Commerce en 2025</p>
+                            <p class="text-sm text-slate-400 flex gap-1.5 items-start h-max ">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-calendar-icon lucide-calendar"
+                                >
+                                    <path d="M8 2v4"/>
+                                    <path d="M16 2v4"/>
+                                    <rect
+                                        width="18"
+                                        height="18"
+                                        x="3"
+                                        y="4"
+                                        rx="2"
+                                    />
+                                    <path d="M3 10h18"/>
+                                </svg>
+                                17/09/25
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-xl font-semibold line-clamp-2">El Estado del Comercio Electrónico Global en 2025: Datos, Claves, Tendencias y Previsiones</h2>
+                            <p class="text-slate-300/70 line-clamp-4">El comercio electrónico en 2025 se ha consolidado como pilar de la economía global, impulsado por el auge del comercio móvil, la inteligencia artificial, la realidad aumentada y el comercio social. China y Estados Unidos lideran el mercado, mientras que países emergentes como Perú muestran gran crecimiento.</p>
+                        </div>
+                        <div class="w-full flex  gap-3">
+                            <div class="flex w-full gap-4 items-center justify-between">
+                                <div class="flex">
+                                    <div class=" w-6 h-6 font-semibold border-black text-xs flex justify-center items-center border-2 rounded-full bg-gradient-to-br from-purple-500 to-cyan-500">JA</div>
+                                    <div class="ml-[-8px] w-6 h-6 font-semibold border-black text-xs flex justify-center items-center border-2 rounded-full bg-gradient-to-br from-purple-500 to-cyan-500">EL</div>
+                                    <div class="ml-[-8px] w-6 h-6 font-semibold border-black text-xs flex justify-center items-center border-2 rounded-full bg-gradient-to-br from-purple-500 to-cyan-500">JM</div>
+                                    <div class="ml-[-8px] w-6 h-6 font-semibold border-black text-xs flex justify-center items-center border-2 rounded-full bg-gradient-to-br from-orange-500 to-pink-500">+2</div>
+                                </div>
+                                <p class="text-sm text-slate-300/70 mr-auto max-sm:hidden">5 colaboradores</p>
+                                <div class="flex gap-2 rounded-xl hover:bg-orange-600 transition-all duration-300 ease-in-out px-2 py-1 items-center cursor-pointer ml-auto">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-book"
+                                    >
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"/>
+                                        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"/>
+                                        <path d="M3 6l0 13"/>
+                                        <path d="M12 6l0 13"/>
+                                        <path d="M21 6l0 13"/>
+                                    </svg>
+                                    <p>Leer Más</p>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
+                                    >
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M5 12l14 0"/>
+                                        <path d="M13 18l6 -6"/>
+                                        <path d="M13 6l6 6"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
-                <a class="flex gap-2 items-center justify-center text-white  bg-gradient-to-r from-purple-600 to-pink-500 px-5 py-2 rounded-full hover:from-purple-700 hover:to-pink-600 hover:scale-105 transition-all duration-300 group active:scale-110 active:shadow-lg sombra-low" href="pages/Ensayos.html">
+                <a class="flex gap-2 items-center justify-center text-white  bg-gradient-to-r from-purple-600 to-pink-500 px-5 py-2 rounded-full hover:from-purple-700 hover:to-pink-600 hover:scale-105 transition-all duration-300 group active:scale-110 active:shadow-lg sombra-low " href="pages/Ensayos.html">
                     Ver Todos los Ensayos
                     <svg
                         class="group-hover:translate-x-2 transition-all duration-300 ease-in-out group-active:translate-x-2"
@@ -427,7 +577,7 @@
                     </svg>
                 </a>
             </section>
-            <section class="w-[95%] border border-gray-200/30 rounded-2xl p-10 px-5 flex flex-col justify-between items-center h-[20rem] bg-purple-600/5 hover:bg-purple-600/15 sombra-higth transition-all duration-300 hover:border-gray-200/40 max-sm:w-[85%]">
+            <section class="w-[95%] border border-gray-200/30 rounded-2xl p-10 px-5 flex flex-col justify-between items-center  bg-purple-600/5 hover:bg-purple-600/15 sombra-higth transition-all duration-300 hover:border-gray-200/40 max-sm:w-[85%] gap-4">
                 <div class="text-center flex flex-col items-center">
                     <h2 style="font-size: clamp(2rem, 4vw + 1rem, 4rem)" class="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent font-semibold">Únete a la Conversación</h2>
                     <p style="font-size: clamp(.8rem, 1vw + .8rem, 1.6rem)" class="text-slate-400 max-md:w-full text-center w-[80%]">Lee nuestros ensayos, comparte tus ideas y forma parte de esta comunidad</p>

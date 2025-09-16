@@ -2,8 +2,9 @@ import { scroll } from "./scroll.js";
 import { toggleMenu } from "./toggleMenu.js";
 import { supabase } from "../js/supabase.js";
 scroll();
-
+const pagina = document.getElementById("key").getAttribute("data-id");
 window.toggleMenu = toggleMenu;
+window.cerrarModal = cerrarModal;
 
 function habilitarFuncion() {
   const comentarBoton = document.getElementById("boton-comentar");
@@ -19,7 +20,7 @@ function habilitarFuncion() {
       }
     });
     comentarBoton.addEventListener("click", (e) => {
-      mostrarComentario();
+      mostrarComentario(pagina);
       e.preventDefault();
     });
   }
@@ -117,10 +118,10 @@ async function obtenerUsuario() {
   }
 }
 
-async function cargarComentarios() {
+async function cargarComentarios(tabla) {
   const comentarios = document.getElementById("comentarios");
   const { data, error } = await supabase
-    .from("comments")
+    .from(tabla)
     .select("*")
     .order("created_at", { ascending: true });
   if (error) {
@@ -144,12 +145,12 @@ async function cargarComentarios() {
     comentarios.insertAdjacentElement("beforeend", comentarioContenedor);
   });
 }
-async function mostrarComentario() {
+async function mostrarComentario(tabla) {
   const comentario = document.getElementById("comment");
   const comentarios = document.getElementById("comentarios");
   const { nombre, foto } = await obtenerUsuario();
 
-  const { error } = await supabase.from("comments").insert([
+  const { error } = await supabase.from(tabla).insert([
     {
       nickname: nombre,
       content: comentario.value,
@@ -177,4 +178,43 @@ async function mostrarComentario() {
   comentarios.insertAdjacentElement("beforeend", comentarioContenedor);
   comentario.value = "";
 }
-cargarComentarios();
+
+const overley = document.getElementById("overlay");
+
+function cerrarModal() {
+  overley.classList.replace("translate-x-[0]", "translate-x-[-100vw]");
+  setTimeout(() => {
+    overley.classList.replace("hidden", "flex");
+  }, 450);
+}
+
+
+setTimeout(() => {
+  overley.classList.replace("hidden", "flex");
+  setTimeout(() => {
+    overley.classList.replace("translate-x-[100vw]", "translate-x-[0]");
+  }, 10);
+}, 20000);
+
+
+const vermasBoton = document.getElementById("vermas");
+
+
+vermasBoton.addEventListener("click", () => {
+  const verTexto = document.getElementById("verTexto")
+  const verIcon = document.getElementById("verIcon")
+  const textoEnsayo = document.getElementById("texto-ensayo");
+  
+  textoEnsayo.classList.toggle("line-clamp-none");
+  if (verTexto.textContent === "Ver más") {
+    verTexto.textContent = "Ver menos"
+    
+  }else{
+    verTexto.textContent = "Ver más";
+    
+  
+  }
+  
+  verIcon.classList.toggle("rotate-180")
+});
+cargarComentarios(pagina)

@@ -8,9 +8,9 @@
         <link rel="shortcut icon" href="../src/icon.png" type="image/x-icon">
     </head>
     <body class="flex flex-col items-center relative ">
-        <div id="overlay" class="bg-gradient-to-br from-pink-600 to-purple-600 w-[20rem] p-6 pt-9 rounded-2xl text-white items-center hidden flex-col gap-4 shadow-lg shadow-black/40 fixed bottom-10 z-50 scale-80 translate-x-[100vw] transition-all duration-400 max-sm:w-[90%]">
-            <h1 class="text-2xl text-center font-semibold text-white">¡Por favor, dejanos tu comentario sobre este ensayo!</h1>
-            <a onclick="cerrarModal()" class="flex flex-col gap-1 items-center justify-center bg-cyan-500 rounded-xl px-4 py-2  font-semibold text-lg cursor-pointer hover:scale-105 transition-all duration-200 ease-in-out " href="#comentarios">
+        <div id="overlay" class="bg-white w-[20rem] p-6 pt-9 rounded-2xl text-white items-center hidden flex-col gap-4 shadow-lg shadow-black/40 fixed bottom-10 z-50 scale-80 translate-x-[100vw] transition-all duration-400 max-sm:w-[90%]">
+            <h1 class="text-2xl text-center font-semibold text-black">¡Por favor, dejanos tu comentario sobre este ensayo!</h1>
+            <a onclick="cerrarModal()" class="flex flex-col gap-1 items-center justify-center bg-blue-500 rounded-xl px-4 py-2  font-semibold text-lg cursor-pointer hover:bg-purple-500  transition-all duration-300 ease-in-out" href="#comentarios">
                 COMENTAR
                 <svg
                     class="animate-bounce"
@@ -30,7 +30,7 @@
                     <path d="M7 13l5 5l5 -5"/>
                 </svg>
             </a>
-            <button onclick="cerrarModal()" class="absolute right-4 top-4 cursor-pointer text-white">
+            <button onclick="cerrarModal()" class="absolute right-4 top-4 cursor-pointer text-black">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -38,7 +38,7 @@
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="3"
+                    stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     class="icon icon-tabler icons-tabler-outline icon-tabler-x"
@@ -119,6 +119,7 @@
             <div id="contenedor" class="max-sm:max-w-full  ml-auto h-full max-sm:border-0 border-l pl-5 border-gray-300/30  flex items-center relative min-w-[5rem]">
                 <div id="contenedor-perfil" class="hidden justify-center items-center border border-gray-200/20 bg-white/10 rounded-3xl px-3 py-1.5 gap-3 hover:scale-105 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-orange-500/40 hover:border-orange-500/50 hover:bg-orange-400/20 hover:text-orange-300 cursor-default ml-auto">
                     <img
+                    
                         id="imagen-perfil"
                         class=" rounded-full max-sm:w-[20px] max-sm:h-[20px]"
                         height="24px"
@@ -135,7 +136,7 @@
                 </div>
                 <button id="iniciar" class=" hidden justify-center items-center border border-gray-200/20 bg-white/10 rounded-3xl px-3 py-1.5 gap-3 hover:scale-105 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-orange-500/40 hover:border-orange-500/50 hover:bg-orange-400/20 hover:text-orange-300 cursor-default max-sm:text-sm ml-auto active:border-orange-500/50 active:bg-orange-400/20 active:text-orange-300">
                     <svg
-                        class="min-h-[20px] min-w-[20px]"
+                    class="min-h-[20px] min-w-[20px]"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
@@ -147,6 +148,7 @@
                         <path d="M12 2a9.96 9.96 0 0 1 6.29 2.226a1 1 0 0 1 .04 1.52l-1.51 1.362a1 1 0 0 1 -1.265 .06a6 6 0 1 0 2.103 6.836l.001 -.004h-3.66a1 1 0 0 1 -.992 -.883l-.007 -.117v-2a1 1 0 0 1 1 -1h6.945a1 1 0 0 1 .994 .89c.04 .367 .061 .737 .061 1.11c0 5.523 -4.477 10 -10 10s-10 -4.477 -10 -10s4.477 -10 10 -10z"/>
                     </svg>
                     <span class="max-sm:hidden flex">Iniciar con Google</span>
+                    
                 </button>
             </div>
             <div onclick="toggleMenu()" class="bg-white/10 rounded-3xl px-3 py-1.5 border border-gray-200/20 hidden max-sm:block active:bg-white/20 active:scale-110 transition-all duration-300 active:border-gray-200/30">
@@ -267,8 +269,8 @@
                 Volver a Ensayos
             </a>
             <section class="text-white border border-gray-300/30 rounded-2xl bg-white/5 p-12 max-sm:p-6 gap-8 flex flex-col">
-                <h1 style="font-size: clamp(1.5rem, 4vw + 1rem, 3rem)" class=" font-semibold w-[85%] max-md:w-[90%] max-sm:mb-[-1rem]">Las Tendencias Ecommerce en 2025: ¿Qué Podemos Esperar del Comercio Electrónico en el Futuro?</h1>
-                <p style="font-size: clamp(.7rem, 1vw + .8rem, 1.4rem)" class="text-slate-300/80 max-md:w-[95%]">Exploramos que es lo que nos depara el futuro con respecto a las tendencias del E-Commerce.</p>
+                <h1 style="font-size: clamp(1.5rem, 4vw + 1rem, 3rem)" class=" font-semibold w-[85%] max-md:w-[90%] max-sm:mb-[-1rem]">El Estado del Comercio Electrónico Global en 2025: Datos, Claves, Tendencias y Previsiones</h1>
+                <p style="font-size: clamp(.7rem, 1vw + .8rem, 1.4rem)" class="text-slate-300/80 max-md:w-[95%]">Veremos el estado actual del E-Commerce en 2025</p>
                 <div class=" border border-gray-300/30 rounded-2xl bg-white/5 p-6 grid grid-cols-2 w-full max-md:grid-cols-1 max-md:gap-6">
                     <div class="flex items-center gap-3">
                         <svg
@@ -378,57 +380,76 @@
                     </div>
                 </div>
             </section>
-            <section id="entrada" class="text-white border border-gray-300/30 rounded-2xl bg-white/5 p-12 max-sm:p-6 w-full ">
+            <section id="entrada" class="text-white border border-gray-300/30 rounded-2xl bg-white/5 p-12 max-sm:p-6 w-full " >
+                
                 <h3 class="font-semibold text-xl">INTRODUCCION</h3>
-                <p id="texto-ensayo" class="whitespace-pre-line line-clamp-10  leading-6 text-slate-200/80 text-justify">
-                    El comercio electrónico ha pasado de ser un canal marginal de transacciones en línea a convertirse en uno de los pilares fundamentales de la economía contemporánea. Durante las dos últimas décadas, la digitalización, la masificación del internet y el auge de los dispositivos móviles han transformado radicalmente los hábitos de consumo, abriendo la puerta a un mercado global donde las fronteras físicas se difuminan. De acuerdo con la Conferencia de las Naciones Unidas sobre Comercio y Desarrollo (UNCTAD, 2023), el e-commerce mundial superó los 5,5 billones de dólares en 2022 y continúa creciendo a tasas sostenidas, consolidándose como un motor de innovación y competitividad.
-En el caso latinoamericano, y particularmente en el Perú, la pandemia de COVID-19 aceleró la adopción de plataformas digitales de manera exponencial. El confinamiento y las restricciones de movilidad llevaron a miles de pequeñas y medianas empresas (pymes) a abrir canales de venta en línea como única alternativa de subsistencia. Según el Instituto Nacional de Estadística e Informática (INEI, 2024), más del 40% de los comercios minoristas peruanos realizaron por primera vez ventas digitales durante la emergencia sanitaria, marcando un punto de inflexión en la evolución del sector. Así, lo que inicialmente fue una respuesta coyuntural se consolidó como un hábito de consumo en la pospandemia.
-En 2025, el comercio electrónico no solo es un mecanismo para adquirir productos, sino un ecosistema donde convergen múltiples dimensiones: la inteligencia artificial (IA) que permite personalizar la experiencia del usuario, la realidad aumentada (AR) que ofrece nuevas formas de interacción con los productos, las billeteras digitales que amplían la inclusión financiera y la sostenibilidad como criterio central en la cadena logística. Al mismo tiempo, la regulación y la gestión ética de los datos personales se convierten en condiciones esenciales para sostener la confianza de los consumidores en un mercado cada vez más competitivo y vigilado.
-Este ensayo plantea como tesis que el éxito del comercio electrónico en 2025 dependerá de la capacidad de las empresas para integrar tres ejes estratégicos: la innovación tecnológica, la sostenibilidad logística y la transparencia en la gestión de datos personales. Aquellas organizaciones que logren equilibrar estos componentes no solo serán más competitivas, sino que también estarán mejor posicionadas para responder a las crecientes demandas sociales y ambientales de un consumidor más informado, crítico y exigente.
+                <p id="texto-ensayo" class="whitespace-pre-line leading-6 text-slate-200/80 text-justify line-clamp-10 overflow-y-hidden " >
+                    El comercio electrónico mundial ha experimentado una evolución extraordinaria que ha transformado radicalmente la forma en que las empresas operan y los consumidores realizan sus compras. En 2025, nos encontramos ante un panorama digital que supera todas las proyecciones previas y que ha establecido nuevos paradigmas comerciales que definen el futuro de la economía global. Esta transformación no representa simplemente una digitalización de procesos tradicionales, sino una completa reimaginación de las relaciones comerciales que integra tecnologías emergentes, nuevos comportamientos de consumo y modelos de negocio innovadores.
+El presente ensayo examina de manera integral los elementos que configuran el comercio electrónico global en 2025, analizando desde las tendencias tecnológicas más disruptivas hasta los cambios estructurales en el comportamiento del consumidor, con el objetivo de proporcionar una comprensión profunda de un fenómeno que continúa redefiniendo las reglas del juego comercial a escala planetaria.
 
-<span class="font-semibold text-lg text-white">1. Innovación tecnológica como motor del e-commerce en 2025</span>
+<span class="font-semibold text-lg text-white">El Panorama Actual</span>
 
-La tecnología constituye la base sobre la cual se sostiene el crecimiento del comercio electrónico. En 2025, las empresas que lideran el mercado global han convertido la inteligencia artificial (IA), el big data y la realidad aumentada en aliados estratégicos para diferenciarse y fidelizar a los clientes. Por ejemplo, plataformas como Amazon o Alibaba utilizan algoritmos de IA que analizan patrones de compra y comportamiento digital para ofrecer recomendaciones altamente personalizadas, lo que incrementa las probabilidades de conversión.
-En el contexto peruano, si bien el nivel de sofisticación tecnológica no alcanza los estándares de estas grandes corporaciones, se han dado avances significativos. Empresas como Platanitos y Falabella Perú han implementado chatbots inteligentes que permiten resolver dudas de los consumidores en tiempo real, mejorando la experiencia del usuario y reduciendo costos de atención. Asimismo, se observa un crecimiento en el uso de realidad aumentada en rubros como la moda y el mobiliario: algunas tiendas ya permiten que los usuarios “prueben” virtualmente cómo luciría una prenda o un mueble en sus hogares antes de realizar la compra.
-Este fenómeno responde a un cambio en las expectativas del consumidor digital, quien ya no se conforma con una transacción funcional, sino que busca experiencias interactivas, rápidas y seguras. Según Shopify (2025), las marcas que incorporan experiencias inmersivas en sus plataformas registran un 20% más de retención de clientes en comparación con aquellas que ofrecen servicios tradicionales.
+El comercio electrónico mundial se encuentra en una fase de transformación extraordinaria, con ventas globales que alcanzarán los 6.86 billones de dólares en 2025, registrando un crecimiento interanual del 8.3%. El número de compradores en línea ha alcanzado los 2.77 mil millones de usuarios, representando aproximadamente el 34% de la población mundial, lo que demuestra que las compras digitales se han convertido en una práctica comercial mainstream.
 
-<span class="font-semibold text-lg text-white">2. Inclusión financiera y nuevos métodos de pago</span>
+Las ventas en línea representan aproximadamente el 22.6% del total de ventas minoristas globales, con proyecciones que indican que esta cifra alcanzará cerca del 24% para 2026. Esta evolución refleja un cambio estructural permanente en los hábitos de consumo que se consolidó durante la pandemia y continúa expandiéndose.
 
-Otro eje clave del desarrollo del e-commerce es la diversificación de los métodos de pago. En países desarrollados, las billeteras digitales como Apple Pay, Google Wallet o PayPal son estándar; sin embargo, en América Latina aún existe un reto en la inclusión financiera. El Perú, por ejemplo, cuenta con una tasa de bancarización cercana al 52% en 2024 (Banco Central de Reserva del Perú), lo cual significa que casi la mitad de la población adulta no accede a servicios financieros tradicionales.
-Ante esta limitación, han surgido soluciones innovadoras como Yape y Plin, aplicaciones de pago móvil que no requieren necesariamente una tarjeta de crédito, sino que funcionan con una cuenta bancaria básica o incluso con recargas en efectivo. Estas plataformas han democratizado el acceso al comercio electrónico, permitiendo que microemprendedores y consumidores de distintos niveles socioeconómicos participen del mercado digital.
-Un ejemplo concreto es el sector gastronómico: numerosos restaurantes pequeños, que antes dependían de ventas presenciales, ahora reciben pedidos en línea a través de aplicaciones de delivery que integran pagos por Yape o Plin. Esto ha ampliado su alcance y los ha hecho competitivos frente a cadenas más grandes.
+<span class="font-semibold text-lg text-white">China y Estados Unidos: Los Gigantes que Dominan el Mercado Global</span>
 
-<span class="font-semibold text-lg text-white">3. Logística y sostenibilidad: el nuevo desafío competitivo</span>
+El liderazgo del comercio electrónico mundial sigue concentrado en dos potencias económicas que han desarrollado ecosistemas digitales altamente sofisticados. China mantiene su posición dominante con ventas online que alcanzaron los 1.26 billones de dólares en 2023, mientras que Estados Unidos se consolida como el segundo mercado más importante. Juntos, estos países representaron más de 2.32 billones de dólares en ventas combinadas, evidenciando la concentración geográfica del poder económico digital.
 
-La rapidez y la eficiencia en la entrega constituyen hoy uno de los factores más valorados por los consumidores digitales. Sin embargo, la presión por cumplir con plazos cada vez más cortos ha generado un aumento en el impacto ambiental de las cadenas logísticas. En 2025, se observa una tendencia hacia la logística verde, que busca equilibrar eficiencia con sostenibilidad.
-Empresas globales como DHL y FedEx han comenzado a implementar vehículos eléctricos y a optimizar rutas con software de IA para reducir emisiones de carbono. En América Latina, Mercado Libre anunció en 2024 la incorporación de más de 150 vehículos eléctricos en su flota de distribución regional.
-En el Perú, la situación aún es incipiente, pero existen señales de cambio. El startup Chazki, especializada en última milla, ha introducido bicicletas eléctricas para entregas en Lima Metropolitana, lo cual contribuye a descongestionar el tránsito y reducir la huella de carbono. Estos esfuerzos no solo generan beneficios ambientales, sino que también responden a un consumidor más consciente, que valora la responsabilidad social de las marcas. De hecho, un estudio de Kantar (2023) indica que el 65% de los consumidores peruanos prefieren comprar en empresas que demuestran prácticas sostenibles.
+<span class="font-semibold text-lg text-white">La Revolución Móvil y la Inteligencia Artificial</span>
 
-<span class="font-semibold text-lg text-white">4. Confianza digital y gestión ética de los datos</span>
+El comercio móvil se ha consolidado como el motor principal del crecimiento del ecommerce, con ventas proyectadas de 2.52 billones de dólares en 2025, representando aproximadamente el 75% de las ventas totales de comercio electrónico. Más del 70% del tráfico en tiendas online proviene de dispositivos móviles, obligando a las empresas a adoptar estrategias mobile-first como requisito fundamental para la supervivencia en el mercado digital.
+
+La inteligencia artificial tambien ha emergido como la tecnología más disruptiva en el comercio electrónico de 2025. Las empresas que implementan IA experimentan un aumento promedio de ingresos entre el 10% y 12%, mientras que el mercado de IA aplicada al ecommerce alcanzará los 8.65 mil millones de dólares en 2025. Los algoritmos de personalización predictiva han evolucionado hasta crear experiencias hiperpersonalizadas basadas en historial de navegación, clima local y disponibilidad logística.
+
+La implementación de chatbots impulsados por IA ha revolucionado el servicio al cliente, con el 70% de las conversaciones en línea gestionadas por estos sistemas automatizados. Gartner estima que para 2025, el 80% de las interacciones de servicio al cliente serán gestionadas por IA.
+
+<span class="font-semibold text-lg text-white">Realidad Aumentada</span>
+
+La realidad aumentada está revolucionando la experiencia de compra online, con un mercado proyectado de 50 mil millones de dólares en 2024. Los productos que incorporan experiencias de realidad aumentada tienen un 94% más de tasa de conversión comparado con aquellos que no la utilizan. Marcas como IKEA han reducido significativamente sus tasas de devolución mediante herramientas que permiten visualizar productos en espacios reales antes de la compra.
 
 
-El crecimiento del e-commerce depende en gran medida de la confianza del consumidor. La seguridad en las transacciones y la protección de datos personales se han convertido en prioridades ineludibles. En 2025, la regulación internacional avanza hacia marcos más estrictos de privacidad, como el Reglamento General de Protección de Datos (GDPR) en Europa, que ha servido de referencia para legislaciones en América Latina.
-En Perú, la Ley de Protección de Datos Personales (Ley N.° 29733) regula el uso de la información privada de los usuarios, aunque su aplicación enfrenta limitaciones en materia de supervisión y cumplimiento. Casos de ciberataques y fraudes electrónicos han puesto en evidencia la necesidad de invertir en sistemas de ciberseguridad más robustos.
-Frente a este contexto, las empresas que apuestan por la transparencia en sus políticas de manejo de datos logran diferenciarse. Por ejemplo, la fintech Culqi ha desarrollado protocolos de encriptación avanzada que permiten a los usuarios realizar pagos digitales de manera segura, lo que incrementa la confianza y, en consecuencia, la fidelidad hacia la marca.
+El comercio social ha experimentado un crecimiento explosivo, con ventas a través de redes sociales representando más del 17% de las ventas en línea en 2025. TikTok se ha consolidado como líder con tendencias como #TikTokMadeMeBuyIt impulsando compras mediante recomendaciones auténticas. Charlotte Tilbury ejemplifica este potencial al lograr un aumento del 200% en ventas en 48 horas a través de TikTok Shop.
 
-<span class="font-semibold text-lg text-white">5. El consumidor del futuro: exigente, informado y crítico</span>
+Instagram mantiene su posición como "el rey del visual commerce" con herramientas avanzadas de compra directa y funciones de realidad aumentada integradas.
 
-Finalmente, el perfil del consumidor digital en 2025 se caracteriza por un mayor nivel de información y exigencia. Este consumidor no solo busca precios competitivos, sino también experiencias personalizadas, opciones de pago flexibles, rapidez en la entrega y compromiso ambiental de las empresas. Además, las redes sociales han potenciado su poder de influencia: una mala experiencia puede viralizarse y afectar la reputación de una marca en cuestión de horas.
-En el Perú, esta realidad se refleja en la expansión del comercio electrónico en provincias. Según la Cámara Peruana de Comercio Electrónico (CAPECE, 2024), las regiones de Arequipa, Trujillo y Cusco han mostrado un crecimiento sostenido en compras digitales, impulsado por jóvenes emprendedores que aprovechan redes como Instagram y TikTok para comercializar productos locales. 
+
+<span class="font-semibold text-lg text-white">Revolución en los Métodos de Pago</span>
+
+Las billeteras digitales han experimentado adopción masiva, con proyecciones que indican que el 53% de las compras online se realizarán a través de estas plataformas en 2025. PayPal lidera con 77% de preferencia, seguido por Venmo (37%), Apple Pay (36%) y Google Pay (32%).
+
+El modelo "Compra ahora, paga después" (BNPL) experimenta crecimiento excepcional del 24% anual, superando los 450 mil millones de dólares en transacciones globales para 2026, democratizando el acceso a productos de mayor valor especialmente entre generaciones más jóvenes.
+
+<span class="font-semibold text-lg text-white">Sostenibilidad</span>
+
+La sostenibilidad se ha convertido en factor determinante en las decisiones de compra, con el 73% de los millennials dispuestos a gastar más en productos sostenibles. El mercado de productos sostenibles está proyectado para alcanzar 40.75 mil millones de dólares para 2030. Las empresas integran prácticas sostenibles en toda su cadena de valor, donde el embalaje sostenible ya no es preferencia sino expectativa del mercado.
+
+<span class="font-semibold text-lg text-white">El Caso Específico de Perú</span>
+
+Perú se ha posicionado como uno de los mercados de ecommerce más dinámicos de Latinoamérica, registrando crecimiento anual promedio del 35% entre 2023 y 2026, con proyecciones de alcanzar 63.100 millones de dólares. El crecimiento está impulsado por dispositivos móviles, con más del 70% de compras realizándose desde smartphones.
+
+El ecosistema de pagos digitales peruano ha evolucionado notablemente, con la interoperabilidad entre Yape y Plin generando más de 80 millones de transacciones adicionales hasta agosto de 2024.
+
+<span class="font-semibold text-lg text-white">Desafíos y Perspectivas Futuras</span>
+
+El comercio electrónico enfrenta desafíos significativos como la tasa de abandono de carritos del 70.19%, requiriendo optimización constante de experiencia de usuario. Las proyecciones indican crecimiento sostenido hacia los 8.09 billones de dólares en 2028, con incremento del 57.7% respecto a 2022.
+
+La integración de tecnologías emergentes continuará profundizándose, con IA, realidad aumentada y blockchain convergiendo para crear experiencias más inmersivas. El futuro será caracterizado por la eliminación de fricciones entre descubrimiento, evaluación, compra y entrega, evolucionando hacia experiencias seamless donde la distinción entre online y offline se desvanecerá completamente.
 
                     <span class="font-semibold text-xl text-white">CONCLUSIÓN</span>
+                    
+                    El análisis del comercio electrónico global en 2025 revela una industria que ha alcanzado madurez y sofisticación excepcionales, consolidándose como la columna vertebral de la economía digital contemporánea. La convergencia de tecnologías emergentes ha creado un ecosistema que trasciende las limitaciones tradicionales del comercio, generando experiencias hiperpersonalizadas y eliminando barreras geográficas y temporales.
 
-                    El comercio electrónico en 2025 se consolida como un fenómeno transformador de la economía global y regional. Más allá de ser un simple canal de ventas, se ha convertido en un ecosistema complejo donde confluyen la tecnología, la logística, la inclusión financiera y la ética digital. El análisis desarrollado permite sostener la tesis central de este ensayo: el éxito de las empresas en el e-commerce dependerá de su capacidad para integrar innovación tecnológica, sostenibilidad en la cadena logística y transparencia en la gestión de datos personales.
-Las tendencias actuales demuestran que la innovación no es opcional, sino condición para la supervivencia. La adopción de inteligencia artificial, realidad aumentada y big data redefine las experiencias de consumo, al mismo tiempo que plantea desafíos en términos de inversión y adaptación para las pequeñas y medianas empresas. En el caso peruano, plataformas como Yape, Plin o Culqi evidencian que la creatividad local puede responder a problemáticas estructurales como la baja bancarización, generando oportunidades de acceso a un mayor número de consumidores. Del mismo modo, la sostenibilidad se ha posicionado como un criterio de competitividad. La incorporación de prácticas logísticas más limpias, como el uso de vehículos eléctricos o la optimización de rutas, no solo reduce costos operativos a largo plazo, sino que fortalece la reputación de las marcas ante consumidores cada vez más críticos y conscientes de su impacto ambiental. Esta dimensión resulta especialmente relevante en el Perú, donde los problemas de contaminación urbana y la congestión vehicular exigen soluciones innovadoras en la distribución de última milla.
+El dominio del comercio móvil, la integración de inteligencia artificial, el auge del comercio social y la importancia creciente de la sostenibilidad confirman una transformación irreversible que ha redefinido las reglas del juego comercial. Los mercados emergentes como Perú ilustran el potencial de expansión que aún existe, mientras que los desafíos identificados representan oportunidades para empresas que sepan adaptarse eficazmente.
 
-Asimismo, la confianza digital constituye un pilar indispensable para sostener el crecimiento del comercio electrónico. Las empresas que invierten en sistemas de ciberseguridad robustos y promueven políticas claras sobre el manejo de datos personales logran diferenciarse en un entorno marcado por la desconfianza y el riesgo de fraudes electrónicos. El caso de fintechs peruanas como Culqi demuestra que la transparencia no solo protege al consumidor, sino que también construye fidelidad a largo plazo.
-En este contexto, el consumidor del futuro no es pasivo, sino un actor protagónico que exige rapidez, personalización y sostenibilidad, y que utiliza las redes sociales como mecanismo de fiscalización y de poder. Para las empresas, esto implica un cambio de paradigma: ya no basta con competir en precios, sino que resulta imprescindible ofrecer experiencias completas, coherentes y responsables.
-En síntesis, el comercio electrónico en 2025 representa una oportunidad histórica para transformar la economía peruana y regional hacia modelos más innovadores, inclusivos y sostenibles. Sin embargo, su consolidación dependerá de la capacidad de empresas, gobiernos y consumidores de construir un ecosistema digital basado en la confianza, la responsabilidad y la innovación continua. Solo de este modo será posible que el e-commerce deje de ser un privilegio de unos pocos y se convierta en un verdadero motor de desarrollo económico y social.
+En definitiva, el estado del comercio electrónico global en 2025 confirma que estamos presenciando la consolidación de un nuevo modelo económico que continuará evolucionando. Las empresas que comprendan esta transformación como un proceso continuo de adaptación e innovación estarán mejor posicionadas para capitalizar las oportunidades de un futuro comercial más digital, personalizado y globalmente integrado. La revolución del comercio electrónico no ha culminado; estamos en las etapas iniciales de una transformación que establecerá el comercio digital como la forma dominante de intercambio comercial del siglo XXI.
+
                 </p>
-                <div id="vermas" class="mt-4 flex w-max rounded-2xl p-2 pr-3 justify-center items-center py-1 bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 cursor-pointer hover:opacity-85 ml-auto gap-1">
+                <div  id="vermas" class="mt-4 flex w-max rounded-2xl p-2 pr-3 py-1 bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 cursor-pointer hover:opacity-85 ml-auto gap-1  ">
                     <svg
                     id="verIcon"
-                    class="transition-all duration-300"
+                    class="transition-all duration-300 "
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -464,9 +485,10 @@ En síntesis, el comercio electrónico en 2025 representa una oportunidad histó
                     <h2 class="font-semibold text-2xl ">Comentarios</h2>
                 </div>
                 <div id="comentarios-seccion"></div>
+                
             </section>
         </main>
-        <div id="key" data-id="comments"></div>
+        <div id="key" data-id="comments-2"></div>
         <script type="module" src="../js/comentarios.js"></script>
     </body>
 </html>

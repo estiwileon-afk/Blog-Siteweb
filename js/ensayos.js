@@ -2,7 +2,6 @@ import { scroll } from "./scroll.js";
 import { toggleMenu } from "./toggleMenu.js";
 import { ensayos } from "./contenido-ensayos.js";
 
-
 scroll();
 const botonesFiltro = document.querySelectorAll(".botones-filtro");
 
@@ -22,6 +21,7 @@ botonesFiltro.forEach((botones) => {
 ensayos.forEach((ensayo) => {
   const contenedorEnsayos = document.getElementById("contenedor-ensayos");
   contenedorEnsayos.innerHTML += ensayo.contenido;
+  
 });
 
 window.ordenarRecientes = ordenarRecientes;
@@ -45,4 +45,4 @@ function ordenarAntiguos() {
     contenedorEnsayos.innerHTML += ensayo.contenido;
   });
 }
-
+ordenarRecientes()
